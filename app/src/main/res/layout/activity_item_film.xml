@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#212121"
+        app:cardElevation="5dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="170dp"
+                android:id="@+id/ivAvatar"
+                android:padding="5dp"
+                tools:src="@drawable/avenger"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+        />
+        <TextView
+                android:layout_toEndOf="@id/ivAvatar"
+                android:layout_width="wrap_content"
+                tools:text="AVENGERS"
+                android:textSize="24dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFCA28"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:id="@+id/tvTitle"
+                android:layout_height="wrap_content" android:layout_toRightOf="@id/ivAvatar"/>
+
+        <TextView
+                android:layout_toEndOf="@id/ivAvatar"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="10dp"
+                android:textColor="#FFCA28"
+                android:id="@+id/tvDes"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_height="wrap_content" android:layout_toRightOf="@id/ivAvatar"
+                tools:text="Marvel’s The Avengers là bộ phim giả tưởng kể về một nhóm siêu anh hùng với những khả năng đặc biệt, họ bao gồm: Người Sắt, Thor, Captain America, và Người Khổng Lồ được gọi chung với cái tên SHIELD. Mục đích của SHIELD là nhằm bảo vệ Trái đất khỏi âm mưu hủy hoại của những thế lực xấu từ ngoài địa cầu mà kẻ cầm đầu là Loki."
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
